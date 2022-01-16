@@ -34,3 +34,27 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
+.messages {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-weight: bold;
+    background:linear-gradient(rgb(194, 40, 40), lightgreen, lightblue);
+    opacity: 0.8;
+}
+
+.plant {
+    padding-inline: 5mm;
+    font-size: 20px;
+    animation: infinite;
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+@keyframes example {
+    0%   {color: red}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+  }

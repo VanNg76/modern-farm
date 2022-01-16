@@ -1,10 +1,10 @@
 // Import create seed functions
-import {createCorn} from "./seeds/corn.js"
-import {createAsparagus} from "./seeds/asparagus.js"
-import {createSoybean} from "./seeds/soybean.js"
-import {createPotato} from "./seeds/potato.js"
-import {createWheat} from "./seeds/wheat.js"
-import {createSunflower} from "./seeds/sunflower.js"
+import { createCorn } from "./seeds/corn.js"
+import { createAsparagus } from "./seeds/asparagus.js"
+import { createSoybean } from "./seeds/soybean.js"
+import { createPotato } from "./seeds/potato.js"
+import { createWheat } from "./seeds/wheat.js"
+import { createSunflower } from "./seeds/sunflower.js"
 
 export const planSeeds = (yearPlan) => {
     let tempArray = yearPlan.slice()
