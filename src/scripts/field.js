@@ -1,13 +1,6 @@
 let seedsAddToPlant = []
 
-export const addPlant = (seedObj) => {
-    
-    // if (Array.isArray(seedObj) === true) {
-    //     seedsAddToPlant.push(seedObj)
-    //     seedsAddToPlant.push(seedObj)
-    // } else {
-    //     seedsAddToPlant.push(seedObj)
-    // }    
+export const addPlant = (seedObj) => {  
 
     return seedsAddToPlant.push(seedObj)
 }

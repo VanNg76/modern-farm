@@ -9,6 +9,11 @@ console.log(yearlyPlan)
 import { usePlants } from './field.js'
 const copiedYearlyPlan = usePlants(yearlyPlan)
 
+// Test creating seeds
+import { createAsparagus } from "./seeds/asparagus.js"
+const asparagusSeed = createAsparagus()
+console.log(asparagusSeed)
+
 // Convert Plan (array of strings) to Plan (array of objects)
 import { plantSeeds } from './tractor.js'
 const plantArray = plantSeeds(copiedYearlyPlan)
@@ -23,8 +28,6 @@ console.log(havest)
 import { catalog } from './catalog.js'
 const displayContent = catalog(havest)
 console.log(displayContent)
-
-// document.getElementById("sale").innerHTML = displayContent[0]
 
 // Display sale items
 let displayHTMLString = ""
