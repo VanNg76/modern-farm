@@ -1,6 +1,6 @@
 console.log("Welcome to the main module")
 
-// Create a Plan
+// Create a Plan (array of String)
 import { createPlan } from './plan.js'
 const yearlyPlan = createPlan()
 console.log(yearlyPlan)
@@ -9,9 +9,9 @@ console.log(yearlyPlan)
 import { usePlants } from './field.js'
 const copiedYearlyPlan = usePlants(yearlyPlan)
 
-// Convert Plan (string) array to Plan (object) array
-import { planSeeds } from './tractor.js'
-const plantArray = planSeeds(copiedYearlyPlan)
+// Convert Plan (array of strings) to Plan (array of objects)
+import { plantSeeds } from './tractor.js'
+const plantArray = plantSeeds(copiedYearlyPlan)
 console.log(plantArray)
 
 // Create havest Plan array

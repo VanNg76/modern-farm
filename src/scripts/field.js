@@ -1,15 +1,15 @@
-
-let allPlants = []
+let seedsAddToPlant = []
 
 export const addPlant = (seedObj) => {
-    if (seedObj.type === "Corn") {
-        allPlants.push(seedObj)
-        allPlants.push(seedObj)        
-    } else {
-        allPlants.push(seedObj)
-    }
     
-    return allPlants
+    // if (Array.isArray(seedObj) === true) {
+    //     seedsAddToPlant.push(seedObj)
+    //     seedsAddToPlant.push(seedObj)
+    // } else {
+    //     seedsAddToPlant.push(seedObj)
+    // }    
+
+    return seedsAddToPlant.push(seedObj)
 }
 
 // returns a copy of array without mutating original array

@@ -6,10 +6,11 @@ import { createPotato } from "./seeds/potato.js"
 import { createWheat } from "./seeds/wheat.js"
 import { createSunflower } from "./seeds/sunflower.js"
 
-export const planSeeds = (yearPlan) => {
+export const plantSeeds = (yearPlan) => {
     let tempArray = yearPlan.slice()
-     for (let i = 0; i < yearPlan.length; i++) {
-         for (let j = 0; j < yearPlan[i].length; j++) {
+
+    for (let i = 0; i < yearPlan.length; i++) {
+        for (let j = 0; j < yearPlan[i].length; j++) {
             switch (yearPlan[i][j]) {
                 case "Corn":
                     tempArray[i][j] = createCorn()
@@ -21,7 +22,7 @@ export const planSeeds = (yearPlan) => {
                     tempArray[i][j] = createSoybean()
                     break;
                 case "Potato":
-                    tempArray[i][j] =createPotato()
+                    tempArray[i][j] = createPotato()
                     break;
                 case "Wheat":
                     tempArray[i][j] = createWheat()
@@ -30,7 +31,8 @@ export const planSeeds = (yearPlan) => {
                     tempArray[i][j] = createSunflower()
                     break;
             }
-         }
-     }
-     return tempArray;                            
+        }
+    }
+    
+    return tempArray;                            
 }

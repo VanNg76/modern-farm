@@ -4,7 +4,7 @@ export const createCorn = () => {
         height: 180,
         output: 6
     }
-    return seed
+    return [seed, seed]
 }
 
 
